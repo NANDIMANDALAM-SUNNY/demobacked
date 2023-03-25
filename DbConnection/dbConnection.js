@@ -9,7 +9,7 @@ mongoose.connect(process.env.dbConnection, { useNewUrlParser: true,useUnifiedTop
   (res) =>  {
     console.log(`Database is Connected`)
   },
-  err => { console.log(`Not Connected`) }
+  err => { console.log(`Not Connected`+err) }
 );
 }
 

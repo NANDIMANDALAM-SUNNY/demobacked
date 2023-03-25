@@ -2,7 +2,10 @@ const jwt = require('jsonwebtoken');
 const {registerMail, sendResetpasswordMail} = require('../utils/utils')
 const nodemailer = require('nodemailer');
 const {hashPassword,hashCompare,createToken, jwtDecode} = require('../middleware/middleware');
-const userSchema = require('../models/user')
+// const userSchema = require('../models/user')
+
+// const userSchema = require('../models/user') 
+const userSchema = require("../Models/user")
 const {cloudinary} = require('../utils/cloudinary')
 const randomString = require('randomstring');
 
