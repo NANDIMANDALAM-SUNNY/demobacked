@@ -11,6 +11,7 @@ const randomString = require('randomstring');
 
 
 const Register =async (req,res)=>{
+  console.log(req.body)
     try {
         let user = await userSchema.findOne({email:req.body.email})
         if(user){
