@@ -37,7 +37,7 @@ const Register =async (req,res)=>{
       }
       catch (error) {
        console.log(error)
-       res.send({ statusCode:500,  message:"Error" }) 
+       res.send({ statusCode:500,  message:"Error" ,error:error}) 
       }
 }
 
